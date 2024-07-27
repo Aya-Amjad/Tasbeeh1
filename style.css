@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rosybrown;
+    background-image: url(./img/86c97958-d1c7-4306-9f24-bbfa79e542ec.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 45%; 
+    margin-left: 35%;
+    max-width: 1200px; 
+}
+
+.rosary-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* خلفية شفافة */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#count1, #count2, #count3, #count4, #count5, #count6 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#increment-button1, #increment-button2, #increment-button3, #increment-button4, #increment-button5, #increment-button6 {
+    background-color: rgba(206, 223, 206, 0.5);
+    color: white;
+}
+
+#increment-button1:hover, #increment-button2:hover, #increment-button3:hover, #increment-button4:hover, #increment-button5:hover, #increment-button6:hover {
+    background-color: rgba(224, 234, 176, 0.411); /* شفافية عند التحويم */
+}
+
+#reset-button1, #reset-button2, #reset-button3, #reset-button4, #reset-button5, #reset-button6 {
+    background-color: rgba(244, 67, 54, 0.5); /* خلفية شفافة */
+    color: white;
+}
+
+#reset-button1:hover, #reset-button2:hover, #reset-button3:hover, #reset-button4:hover, #reset-button5:hover, #reset-button6:hover {
+    background-color: rgba(229, 57, 53, 0.7); 
+}
